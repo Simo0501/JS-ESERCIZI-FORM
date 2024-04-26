@@ -11,3 +11,15 @@
 // Controlla che la checkbox della privacy sia selezionata.
 // Per ogni errore inserisci un messaggio sul rispettivo input
 // Se tutti i controlli sono superati, mostra il messaggio: “Registrazione avvenuta con successo”. (modificato) 
+
+
+const username = document.getElementById("username");
+console.log(username);
+const password = document.getElementById("password");
+console.log(password);
+const ripetiPassword = document.getElementById("ripetiPassword");
+console.log(ripetiPassword);
+const btnCheck5 = document.getElementById("btn-check-5");
+console.log(btnCheck5);
+const btnPrimary = document.querySelector(".btn-primary");
+console.log(btnPrimary);
