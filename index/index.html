@@ -16,13 +16,22 @@
         <label for="username">username</label>
         <input class="ms-5" type="text" name="" id="username">
       </div>
+      <div class="alert alert-primary d-none" id="alertuser">
+        Nome utente: deve contenere almeno 4 caratteri e non più di 10.
+      </div>
       <div class="mt-4">
         <label for="password">password</label>
         <input class="ms-5" type="text" name="" id="password">
       </div>
+      <div class="alert alert-primary d-none" id="alertuser">
+        Deve essere lunga almeno 8 caratteri e non più di 10.
+      </div>
       <div class="mt-4">
         <label for="ripetiPassword">ripeti-password</label>
         <input class="ms-1" type="text" name="" id="ripetiPassword">
+      </div>
+      <div class="alert alert-primary d-none" id="alertuser">
+        Deve essere identica alla password inserita precedentemente.
       </div>
       <div class="check-p mt-4">
         <span class="check-privacy me-4">
@@ -32,7 +41,7 @@
         <label class="btn" for="btn-check-5">Privacy</label>
       </div>
       <div class="bottone mt-4">
-        <button type="button" class="btn btn-primary">Primary</button>
+        <button id="invia" type="button" class="btn btn-primary btn-lg mt-4">Invia</button>
       </div>
     </div>
   </div>
