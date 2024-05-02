@@ -13,8 +13,7 @@
 // Se tutti i controlli sono superati, mostra il messaggio: “Registrazione avvenuta con successo”. (modificato) 
 
 
-const inputuserName = document.getElementById("username");
-console.log(inputuserName);
+
 const inputPassword = document.getElementById("password");
 const inputRipetiPassword = document.getElementById("ripetiPassword");
 const btnCheck5 = document.getElementById("btn-check-5");
@@ -25,11 +24,19 @@ const alertUser = document.getElementById("alertuser");
 
 btnInvia.addEventListener("click",
  function() {
-  const userName = inputuserName.value;
-  console.log(userName);
-
-  if (inputuserName.value = (inputuserName.value > 4 && inputuserName.value < 10) );
+  const inputuserName = document.getElementById("username");
+  console.log(inputuserName);
+  inputuserName.value = (inputuserName.value > 4 && inputuserName.value < 10);
   
- } 
+
+  if (inputuserName.value = (inputuserName.value > 4 && inputuserName.value < 10) ) {
+    console.log("password ok");
+  } else {
+    console.log("errore");
+  }
+  
+  
+ }
 )
+
 
