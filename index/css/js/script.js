@@ -24,12 +24,12 @@ const alertUser = document.getElementById("alertuser");
 
 btnInvia.addEventListener("click",
  function() {
-  const inputuserName = document.getElementById("username");
+  let inputuserName = document.getElementById("username");
   console.log(inputuserName);
-  inputuserName.value = (inputuserName.value > 4 && inputuserName.value < 10);
-  
 
-  if (inputuserName.value = (inputuserName.value > 4 && inputuserName.value < 10) ) {
+  let valueInput = inputuserName.value;
+
+  if (valueInput = inputuserName > 4 && inputuserName < 10 ) {
     console.log("password ok");
   } else {
     console.log("errore");
