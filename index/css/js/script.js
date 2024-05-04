@@ -21,15 +21,15 @@ console.log(btnCheck5);
 const btnInvia = document.getElementById("invia");
 console.log(btnInvia);
 const alertUser = document.getElementById("alertuser");
+const inputuserName = document.getElementById("username");
 
 btnInvia.addEventListener("click",
  function() {
-  let inputuserName = document.getElementById("username");
-  console.log(inputuserName);
 
-  let valueInput = inputuserName.value;
+  const valueInput = inputuserName.value;
+  
 
-  if (valueInput = inputuserName > 4 && inputuserName < 10 ) {
+  if (valueInput.length  > 4 && valueInput.length < 10 ) {
     console.log("password ok");
   } else {
     console.log("errore");
